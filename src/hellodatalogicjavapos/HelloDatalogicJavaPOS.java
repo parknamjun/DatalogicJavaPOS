@@ -40,7 +40,8 @@ public class HelloDatalogicJavaPOS {
 
             ByteArrayOutputStream dioResult = new ByteArrayOutputStream();
 
-            scannerObj.open("DatalogicJavaPOSDevice");
+            scannerObj.open("QS6000");
+            System.out.println("Scanner open.");
 
             scannerObj.claim(1000);
 
