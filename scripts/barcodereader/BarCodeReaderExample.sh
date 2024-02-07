@@ -10,6 +10,9 @@ ENTRY_DIR=$PWD
 # Get the script's directory path.
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
+# log path
+export TEMP=/tmp
+
 # Change working directory to JavaPOS directory.
 # This is need to make JavaPOS.jar 1.14.060's file
 #  access of ./LabelIdentifiers.csv work.
