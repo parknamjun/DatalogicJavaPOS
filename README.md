@@ -7,6 +7,55 @@
 [Developing with JavaPOS](https://datalogic.github.io/javapos/develop/overview)
 
 ## Introduction
+### Magellan 1500i for windows
+```text
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\OLEforRetail\ServiceOPOS\SCANNER\MagellanSC]
+"IncludeCR"="1"
+"WarholParsing"="0"
+@="ServiceOPOS.ServiceOPOSScanner"
+"ConvertBCDtoASCII"="1"
+"WMIOnClaim"="0"
+"UPCEANCheckDigitCalc"="1"
+"DeviceNameOverride"="DATALOGIC PSC RS232 Scanner"
+"CheckIHSOnClaim"="0"
+"AbstractDevice"="817614FD_C918_4060_9767_CC92B6CF5C43"
+"RTSControl"="1"
+"ScanDataEqualsScanDataLabel"="0"
+"FirmwareUpdate"="0"
+"Parity"="None"
+"BaudRate"="9600"
+"DataBits"="8"
+"Port"="COM9"
+"StopBits"="1"
+```
+### Magellan 1500i for linux
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE JposEntries PUBLIC "-//JavaPOS//DTD//EN"
+                             "jpos/res/jcl.dtd">
+<JposEntries>
+    <JposEntry logicalName="MagellanSC">
+        <creation factoryClass="com.dls.jpos.service.DLSScannerInstanceFactory"
+                  serviceClass="com.dls.jpos.service.DLSScannerService"/>
+        <vendor name="DLA" url="http://www.adc.datalogic.com"/>
+        <jpos category="Scanner" version="1.14"/>
+        <product description="ScannerService" name="ScannerService" url="http://www.adc.datalogic.com"/>
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )
+        For Linux: sudo dmesg | grep tty
+        Virtualbox Comport Mapping(Ex. Windows COM9): COM4 -> /dev/ttyS3
+        <prop name="portName" value="/dev/ttyS3"/>
+        -->
+        <prop name="portName" value="COM9"/>
+        <prop name="deviceBus" type="String" value="RS232"/>
+        <prop name="baudRate" type="String" value="9600"/>
+        <prop name="dataBits" type="String" value="8"/>
+        <prop name="stopBits" type="String" value="1"/>
+        <prop name="parity" type="String" value="0"/>
+    </JposEntry>
+</JposEntries>
+```
 ### Datalogic JavaPOS library path
 * Windows: C:\Program Files (x86)\Datalogic\JavaPOS\lib
 * Linux: /usr/local/Datalogic/JavaPOS/
@@ -45,7 +94,16 @@ drwxr-xr-x 2 root root   4096  2월  7 09:11 SupportJars
 -rwxr-x--- 1 root root  134880  2월  6 17:56 Win64Hid.dll
 -rwxr-x--- 1 root root 1386397  2월  6 17:56 xercesImpl-2.12.0.jar
 -rwxr-x--- 1 root root  220536  2월  6 17:56 xml-apis-2.12.0.jar
-
-
 ```
 
+### Run for linux
+* Hello beep Build & Run
+```shell    
+~/work//scriptps/hellodatalogic/BuildHelloDatalogicJavaPOS.sh
+~/work/DatalogicJavaPOS/dist_via_jdk/HelloDatalogicJavaPOS.sh
+```
+* Scanner Reader Build & Run
+```shell    
+~/work//scriptps/barcodereader/BuildBarCodeReaderExample.sh
+~/work/DatalogicJavaPOS/dist_via_jdk/BarCodeReaderExample.sh
+```
