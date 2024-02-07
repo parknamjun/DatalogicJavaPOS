@@ -72,7 +72,7 @@
     -->
     <target name="-post-compile">
         <copy file="interface_configuration/jpos.xml" todir="${dist.dir}"/>
-        <copy file="scripts/HelloDatalogicJavaPOS.cmd" todir="${dist.dir}"/>
-        <copy file="scripts/HelloDatalogicJavaPOS.sh" todir="${dist.dir}"/>
+        <copy file="scripts/hellodatalogic/HelloDatalogicJavaPOS.cmd" todir="${dist.dir}"/>
+        <copy file="scripts/hellodatalogic/HelloDatalogicJavaPOS.sh" todir="${dist.dir}"/>
     </target>
 </project>

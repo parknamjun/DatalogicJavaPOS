@@ -43,6 +43,9 @@ mv ../src/HelloDatalogicJavaPOS.jar ../dist_via_jdk
 cp ../scripts/HelloDatalogicJavaPOS.cmd ../dist_via_jdk
 cp ../scripts/HelloDatalogicJavaPOS.sh ../dist_via_jdk
 cp ../interface_configuration/jpos.xml ../dist_via_jdk
+cp ../jpos.xml ../dist_via_jdk
+cp ../brand.properties ../dist_via_jdk
+cp ../dls.properties ../dist_via_jdk
 
 # Remove a possibly pre-existing build_via_jdk.
 rm -rf ../build_via_jdk

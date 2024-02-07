@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HelloDatalogicJavaPOS.iml" filepath="$PROJECT_DIR$/HelloDatalogicJavaPOS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DatalogicJavaPOS.iml" filepath="$PROJECT_DIR$/DatalogicJavaPOS.iml" />
     </modules>
   </component>
 </project>
