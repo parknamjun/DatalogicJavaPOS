@@ -26,8 +26,8 @@ cd $SCRIPT_DIR/../src
 # Compile the .java file to a .class file.
 printf "pwd: "
 pwd
-printf "javac @../scripts/javac_linux.txt\n"
-javac @../scripts/javac_linux.txt
+printf "javac @../scripts/hellodatalogicjavapos/javac_linux.txt\n"
+javac @../scripts/hellodatalogicjavapos/javac_linux.txt
 
 # Build the .class file(s) into the .jar file along with a manifest.
 # The manifest states the main class.
@@ -35,14 +35,13 @@ printf "\njar -cvfe HelloDatalogicJavaPOS.jar HelloDatalogicJavaPOS hellodatalog
 jar -cvfe HelloDatalogicJavaPOS.jar HelloDatalogicJavaPOS hellodatalogicjavapos/*.class
 
 # Remove a possibly pre-existing dist_via_jdk
-rm -rf ../dist_via_jdk
+rm -rf ../../dist_via_jdk
 
 # Create and populate a new dist_via_jdk.
-mkdir ../dist_via_jdk
+mkdir ../../dist_via_jdk
 mv ../src/HelloDatalogicJavaPOS.jar ../dist_via_jdk
-cp ../scripts/HelloDatalogicJavaPOS.cmd ../dist_via_jdk
-cp ../scripts/HelloDatalogicJavaPOS.sh ../dist_via_jdk
-cp ../interface_configuration/jpos.xml ../dist_via_jdk
+cp ../scripts/hellodatalogicjavapos/HelloDatalogicJavaPOS.cmd ../dist_via_jdk
+cp ../scripts/hellodatalogicjavapos/HelloDatalogicJavaPOS.sh ../dist_via_jdk
 cp ../jpos.xml ../dist_via_jdk
 cp ../brand.properties ../dist_via_jdk
 cp ../dls.properties ../dist_via_jdk
