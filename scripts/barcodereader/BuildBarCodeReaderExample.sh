@@ -45,6 +45,7 @@ cp ../scripts/barcodereader/BarCodeReaderExample.sh ../dist_via_jdk
 cp ../jpos.linux.xml ../dist_via_jdk/jpos.xml
 cp ../brand.properties ../dist_via_jdk
 cp ../dls.properties ../dist_via_jdk
+cp ../javax.usb.properties ../dist_via_jdk
 
 # Remove a possibly pre-existing build_via_jdk.
 rm -rf ../build_via_jdk
