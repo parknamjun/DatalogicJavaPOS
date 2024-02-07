@@ -35,10 +35,10 @@ printf "\njar -cvfe BarCodeReaderExample.jar BarCodeReaderExample barcodereadere
 jar -cvfe BarCodeReaderExample.jar BarCodeReaderExample barcodereaderexample/*.class
 
 # Remove a possibly pre-existing dist_via_jdk
-rm -rf ../../dist_via_jdk
+rm -rf ../dist_via_jdk
 
 # Create and populate a new dist_via_jdk.
-mkdir ../../dist_via_jdk
+mkdir ../dist_via_jdk
 mv ../src/BarCodeReaderExample.jar ../dist_via_jdk
 cp ../scripts/barcodereader/BarCodeReaderExample.cmd ../dist_via_jdk
 cp ../scripts/barcodereader/BarCodeReaderExample.sh ../dist_via_jdk

@@ -35,10 +35,10 @@ printf "\njar -cvfe HelloDatalogicJavaPOS.jar HelloDatalogicJavaPOS hellodatalog
 jar -cvfe HelloDatalogicJavaPOS.jar HelloDatalogicJavaPOS hellodatalogicjavapos/*.class
 
 # Remove a possibly pre-existing dist_via_jdk
-rm -rf ../../dist_via_jdk
+rm -rf ../dist_via_jdk
 
 # Create and populate a new dist_via_jdk.
-mkdir ../../dist_via_jdk
+mkdir ../dist_via_jdk
 mv ../src/HelloDatalogicJavaPOS.jar ../dist_via_jdk
 cp ../scripts/hellodatalogic/HelloDatalogicJavaPOS.cmd ../dist_via_jdk
 cp ../scripts/hellodatalogic/HelloDatalogicJavaPOS.sh ../dist_via_jdk
