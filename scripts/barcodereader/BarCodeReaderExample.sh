@@ -13,7 +13,7 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 # Change working directory to JavaPOS directory.
 # This is need to make JavaPOS.jar 1.14.060's file
 #  access of ./LabelIdentifiers.csv work.
-cd /usr/local/Datalogic/JavaPOS
+#cd /usr/local/Datalogic/JavaPOS
 
 # paths:
 #   local
