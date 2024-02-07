@@ -107,3 +107,13 @@ drwxr-xr-x 2 root root   4096  2월  7 09:11 SupportJars
 ~/work//scriptps/barcodereader/BuildBarCodeReaderExample.sh
 ~/work/DatalogicJavaPOS/dist_via_jdk/BarCodeReaderExample.sh
 ```
+* Linux Log path
+```text
+# log path
+export TEMP=/tmp
+```
+* windows Log path
+```text
+# log path
+set TEMP=/tmp
+```

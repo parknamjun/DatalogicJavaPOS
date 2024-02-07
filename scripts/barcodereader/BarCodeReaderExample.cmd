@@ -23,6 +23,9 @@ cd %~dp0
 REM Save the .cmd directory in CMD_DIR.
 set CMD_DIR=%cd%
 
+REM log path
+set TEMP=/tmp
+
 REM Run BarCodeReaderExample.jar with the working directory the JavaPOS directory.
 REM This is required for JavaPOS.jar to find jpos.xml and 
 REM LabelIdentifiers.csv and other .csv files. These files are in
