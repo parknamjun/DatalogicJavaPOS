@@ -117,3 +117,11 @@ export TEMP=/tmp
 # log path
 set TEMP=/tmp
 ```
+
+* Result
+```text
+Hello Datalogic JavaPOS.
+Do you hear the scanner beep?
+Scanner open.
+Scanner beeped
+```
