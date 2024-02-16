@@ -96,7 +96,7 @@ drwxr-xr-x 2 root root   4096  2월  7 09:11 SupportJars
 -rwxr-x--- 1 root root  220536  2월  6 17:56 xml-apis-2.12.0.jar
 ```
 
-### Run for linux
+### Run for linux by Ubuntu 22.04.2 LTS (GNU/Linux 5.15.133.1-microsoft-standard-WSL2 x86_64)
 * Hello beep Build & Run
 ```shell    
 ~/work//scriptps/hellodatalogic/BuildHelloDatalogicJavaPOS.sh
