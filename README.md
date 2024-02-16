@@ -31,6 +31,7 @@ Windows Registry Editor Version 5.00
 "StopBits"="1"
 ```
 ### Magellan 1500i for linux
+* jpos.xml
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE JposEntries PUBLIC "-//JavaPOS//DTD//EN"
@@ -97,6 +98,7 @@ drwxr-xr-x 2 root root   4096  2월  7 09:11 SupportJars
 ```
 
 ### Run for Ubuntu 22.04.2 LTS (GNU/Linux 5.15.133.1-microsoft-standard-WSL2 x86_64)
+* linux에서 사용하려면 javax.usb.properties 파일이 반드시 있어야 한다
 * Hello beep Build & Run
 ```shell    
 ~/work//scriptps/hellodatalogic/BuildHelloDatalogicJavaPOS.sh
