@@ -58,6 +58,7 @@ Windows Registry Editor Version 5.00
 </JposEntries>
 ```
 ### Datalogic JavaPOS library path
+* datalogic/JavaPOS_Setup.jar 설치하면 아래 jar파일들이 설치
 * Windows: C:\Program Files (x86)\Datalogic\JavaPOS\lib
 * Linux: /usr/local/Datalogic/JavaPOS/
 ```text
